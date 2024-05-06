@@ -14,7 +14,17 @@ export default {
       'gray-s': '#505050',
       'input': '#A1A1A1'
     },
-    extend: {},
+    fontFamily: {
+      display: 'Nunito'
+    },
+    extend: {
+      width: {
+        'icon': '25px'
+      },
+      height: {
+        'icon': '25px'
+      }
+    },
   },
   plugins: [],
 }

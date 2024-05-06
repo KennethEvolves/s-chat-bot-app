@@ -1,7 +1,9 @@
+import { TopBar } from './components'
+
 const App = () => {
     return (
-        <div className="h-10 bg-gray-p text-gray-s">
-            Chat Bot App
+        <div className='flex flex-col justify-center items-center font-display'>
+            <TopBar />
         </div>
     )
 }
