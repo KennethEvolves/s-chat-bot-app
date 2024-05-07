@@ -20,7 +20,7 @@ export const Input = () => {
         <form
             onSubmit={(event) => onSubmit(event)}
             className='w-[333px] h-[60px] bg-white mb-8 p-4 flex flex-r justify-between items-center 
-            shadow-xl rounded-full absolute border border-white focus-within:border-primary xl:w-[810px] md:w-[720px]'
+            shadow-xl rounded-full border border-white focus-within:border-primary xl:w-[810px] md:w-[720px]'
         >
             <input
                 type='text'
