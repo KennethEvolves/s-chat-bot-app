@@ -13,7 +13,7 @@ const Status = () => {
 
 export const TopBar = () => {
     return (
-        <div className='w-full h-[51px] mt-3 pb-4 px-10 border-b-2 border-gray-p flex flex-r justify-between items-center 2xl:px-[550px]'>
+        <div className='w-full h-[51px] mt-3 pb-4 px-10 border-b-2 border-gray-p flex flex-r justify-between items-center 2xl:px-[450px]'>
             <div className='flex flex-r justify-center items-center gap-2'>
                 <TbBrandGithubCopilot className='w-icon h-icon text-primary' />
                 <div className='flex flex-col justify-center items-center'>
