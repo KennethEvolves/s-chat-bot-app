@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { IoSend } from 'react-icons/io5'
 
-export const Input = () => {
+export const Input = ({ onNewMessage }) => {
 
     const [inputValue, setInputValue] = useState('')
 
@@ -12,7 +12,7 @@ export const Input = () => {
     const onSubmit = (event) => {
         event.preventDefault()
         const newInputValue = inputValue.trim()
-        newInputValue >= 3 ? null : console.log(newInputValue)
+        newInputValue.length <= 1 ? null : onNewMessage(newInputValue)
         setInputValue('')
     }
 
