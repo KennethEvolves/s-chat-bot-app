@@ -1,0 +1,15 @@
+export const Suggestions = {
+    correr: 'Una alternativa para correr',
+    nadar: 'Una alternativa para nadar',
+    bicicleta: 'Una alternativa para bicicleta',
+    pesca: 'Una alternativa para pesca',
+    senderismo: 'Una alternativa para senderismo',
+    yoga: 'Una alternativa para yoga',
+    caminar: 'Una alternativa para caminar',
+    pintura: 'Una alternativa para pintura',
+    fotografia: 'Una alternativa para fotografia',
+    tocar_guitarra: 'Una alternativa para tocar guitarra',
+    escribir: 'Una alternativa para escribir',
+    cocinar: 'Una alternativa para cocinar',
+    coleccionar_monedas: 'Alternativa para coleccionar monedas',
+}

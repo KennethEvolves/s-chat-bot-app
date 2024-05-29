@@ -1,8 +1,12 @@
-export const BotMessage = () => {
+import { TbBrandGithubCopilot } from 'react-icons/tb'
+
+export const BotMessage = ({ message }) => {
     return (
-        <article className='bg-gray-p max-w-80 text-gray-s text-justify font-semibold p-5 rounded-3xl rounded-bl-none self-start md:max-w-md'>
-            Hello, I'm fine, How can i help you? Labore ipsum quis laborum occaecat mollit duis qui aute do cupidatat.
-            Ex fugiat nulla veniam adipisicing veniam aliquip sunt fugiat reprehenderit non laboris.
-        </article>
+        <div className='w-full flex flex-r justify-start items-end gap-4'>
+            <TbBrandGithubCopilot className='w-[30px] h-[30px] text-selected' />
+            <article className='bot-message'>
+                {message}
+            </article>
+        </div>
     )
 }

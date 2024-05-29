@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.chat-view {
+  @apply w-full h-screen py-6 px-4 flex flex-col items-center gap-8 overflow-y-auto snap-y max-h-lvh;
+  @apply 2xl:px-[450px] xl:px-[250px] md:px-[70px];
+}
+
+.bot-message {
+  @apply bg-gray-p max-w-80 text-gray-s text-left font-semibold p-5 rounded-3xl rounded-bl-none self-start md:max-w-md;
+}
+
+.user-message {
+  @apply bg-selected max-w-80 text-white text-justify font-medium p-5 rounded-3xl rounded-tr-none self-end md:max-w-md;
+}
+
+.btn {
+  @apply bg-[#0099ff] text-white py-4 px-6 rounded-full transition-transform duration-100 hover:scale-105 hover:bg-selected;
+}
+
+.btn-list {
+  @apply bg-[#0099ff] bg-opacity-80 text-white py-4 px-6 rounded-full transition-transform duration-100 hover:scale-105 hover:bg-selected;
+}
+
+.btn-container {
+  @apply grid grid-cols-1 gap-4 md:grid-cols-2 2xl:grid-cols-3;
+}
+
+.btn-selected {
+  @apply bg-selected;
+}
+
+.btn-send {
+  @apply bg-green text-white py-4 px-6 rounded-full bg-opacity-80 transition-transform duration-100 hover:scale-105;
+}
+
+.btn-send-selected {
+  @apply bg-green;
+}

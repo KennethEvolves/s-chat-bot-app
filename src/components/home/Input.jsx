@@ -1,9 +1,13 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { IoSend } from 'react-icons/io5'
 
-export const Input = ({ onNewMessage }) => {
+export const Input = ({ onNewMessage, stackOptions }) => {
 
     const [inputValue, setInputValue] = useState('')
+
+    useEffect(() => {
+        setInputValue(stackOptions)
+    }, [stackOptions])
 
     const onInputChange = ({ target }) => {
         setInputValue(target.value)
@@ -11,25 +15,25 @@ export const Input = ({ onNewMessage }) => {
 
     const onSubmit = (event) => {
         event.preventDefault()
-        const newInputValue = inputValue.trim()
-        newInputValue.length <= 1 ? null : onNewMessage(newInputValue)
+        inputValue.length <= 1 ? null : onNewMessage(inputValue)
         setInputValue('')
     }
 
     return (
         <form
             onSubmit={(event) => onSubmit(event)}
-            className='w-[333px] h-[60px] bg-white mb-8 p-4 flex flex-r justify-between items-center 
-            shadow-xl rounded-full border border-white focus-within:border-primary xl:w-[810px] md:w-[720px]'
+            className='w-[333px] h-[80px] bg-white mb-12 px-6 flex flex-r justify-end items-center gap-6 
+            shadow-xl rounded-full border border-gray-p focus-within:border-primary xl:w-[810px] md:w-[720px]'
         >
-            <input
+            <textarea
                 type='text'
-                placeholder='Write your message'
+                placeholder='Type a message...'
                 value={inputValue}
                 onChange={(event) => onInputChange(event)}
                 onSubmit={(event) => onSubmit(event)}
-                className='p-4 w-full text-gray-s focus:outline-none rounded-full'
+                className='px-6 py-4 w-full h-[60px] text-gray-s focus:outline-none overscroll-y-auto rounded-full resize-none'
             />
+
             <button onClick={event => onSubmit(event)}>
                 <IoSend className='w-icon h-icon text-primary' />
             </button>

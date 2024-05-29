@@ -1,0 +1,18 @@
+export const Goals = {
+    salud_cardiovascular: 'Mejorar la salud cardiovascular',
+    flexibilidad: 'Mejorar la flexibilidad',
+    resistencia: 'Mejorar la resistencia',
+    conocimiento: 'Adquirir conocimiento',
+    tonificacion_muscular: 'Tonificar los músculos',
+    reduccion_estres: 'Reducir el estrés',
+    salud_mental: 'Mejorar la salud mental',
+    alimentacion_saludable: 'Adoptar una alimentación saludable',
+    expresion_personal: 'Mejorar la expresión personal',
+    coordinacion: 'Mejorar la coordinación',
+    creatividad: 'Fomentar la creatividad',
+    habilidad_musical: 'Mejorar la habilidad musical',
+    habilidad_artesanal: 'Mejorar la habilidad artesanal',
+    paciencia: 'Fomentar la paciencia',
+    precision: 'Mejorar la precisión',
+    conocimiento_historico: 'Adquirir conocimiento histórico',
+}

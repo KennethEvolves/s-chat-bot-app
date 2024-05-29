@@ -7,6 +7,7 @@ export default {
   theme: {
     colors: {
       'primary': '#3369FF',
+      'selected': 'rgba(0, 0, 255, 2)',
       'white': '#FFFFFF',
       'black': '#292D32',
       'green': '#3ABF38',
