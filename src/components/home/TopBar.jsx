@@ -17,7 +17,7 @@ export const TopBar = ({ setSelect, setStackMessages, setStackKeys, setShowButto
         setSelect(null)
         setStackMessages([])
         setStackKeys([])
-        setShowButton(0)
+        setShowButton(true)
         setShowMessage(false)
         setButtonsDisabled(false)
     }

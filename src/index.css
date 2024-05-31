@@ -32,7 +32,7 @@
 }
 
 .btn-send {
-  @apply bg-green text-white py-4 px-6 rounded-full bg-opacity-80 transition-transform duration-100 hover:scale-105;
+  @apply bg-green text-white py-4 px-6 rounded-full bg-opacity-60 transition-transform duration-100 hover:scale-105;
 }
 
 .btn-send-selected {

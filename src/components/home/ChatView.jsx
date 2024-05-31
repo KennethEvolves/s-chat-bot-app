@@ -38,7 +38,7 @@ export const ChatView = ({
     }
 
     const onStackOptions = (key, value) => {
-        setShowButton(showButton + 1)
+        setShowButton(false)
         stackMessages.includes(value) ? null : setStackMessages([...stackMessages, value])
         stackKeys.includes(key) ? null : setStackKeys([...stackKeys, key])
     }
@@ -66,8 +66,8 @@ export const ChatView = ({
                     <div className='btn-container'>
                         <ListButton data={Goals} onStackOptions={onStackOptions} disabled={buttonsDisabled} />
                         <button
-                            className={`btn-send ${!showButton > 0 ? 'cursor-not-allowed' : 'btn-send-selected'}`}
-                            disabled={!showButton > 0}
+                            className={`btn-send ${showButton ? 'cursor-not-allowed' : 'btn-send-selected'}`}
+                            disabled={showButton}
                             onClick={onSendMessage}
                         >Enviar</button>
                     </div>
@@ -89,8 +89,8 @@ export const ChatView = ({
                     <div className='btn-container'>
                         <ListButton data={Harmful} onStackOptions={onStackOptions} disabled={buttonsDisabled} />
                         <button
-                            className={`btn-send ${!showButton > 0 ? 'cursor-not-allowed' : 'btn-send-selected'}`}
-                            disabled={!showButton > 0}
+                            className={`btn-send ${showButton ? 'cursor-not-allowed' : 'btn-send-selected'}`}
+                            disabled={showButton}
                             onClick={onSendMessage}
                         >Enviar</button>
                     </div>
@@ -112,8 +112,8 @@ export const ChatView = ({
                     <div className='btn-container'>
                         <ListButton data={Suggestions} onStackOptions={onStackOptions} disabled={buttonsDisabled} />
                         <button
-                            className={`btn-send ${!showButton > 0 ? 'cursor-not-allowed' : 'btn-send-selected'}`}
-                            disabled={!showButton > 0}
+                            className={`btn-send ${showButton ? 'cursor-not-allowed' : 'btn-send-selected'}`}
+                            disabled={showButton}
                             onClick={onSendMessage}
                         >Enviar</button>
                     </div>

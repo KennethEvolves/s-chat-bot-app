@@ -12,7 +12,7 @@ const App = () => {
     const [select, setSelect] = useState(null);
     const [stackMessages, setStackMessages] = useState([])
     const [stackKeys, setStackKeys] = useState([])
-    const [showButton, setShowButton] = useState(0)
+    const [showButton, setShowButton] = useState(true)
     const [viewMessage, setShowMessage] = useState(false)
     const [buttonsDisabled, setButtonsDisabled] = useState(false)
 

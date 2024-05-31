@@ -6,4 +6,5 @@ export const dataHabitsAlternatives = {
     expresion_personal: 'la expresion personal',
     conocimiento: 'adquirir conocimiento',
     creatividad: 'fomentar la creatividad',
+    reduccion_estres: 'reducir el estrés',
 }
